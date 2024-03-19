@@ -18,3 +18,8 @@ jobs:
                 
             - name: Run a one-line script
               run: echo Hellow, world!
+              
+            - name: Install dependencies
+              run: |
+                python -m pip install --upgrade pip
+                pip install -r requirements.txt
